@@ -21,7 +21,7 @@ const superHero = () => {
 
 superHero();
 newHero.onclick = () => {
-  demoDiv.innerHTML = "";
+  demoDiv.innerHTML = `<img class="load" src="./assets/loading.svg">`;
   superHero();
 };
 
@@ -33,7 +33,7 @@ searchBox.addEventListener("keyup", (event) => {
 });
 
 searchBtn.onclick = () => {
-  demoDiv.innerHTML = "";
+  demoDiv.innerHTML =`<img class="load" src="./assets/loading.svg">`
   names = searchBox.value;
   searchSuperHero();
 };
